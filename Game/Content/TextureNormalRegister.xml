@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>null</string>
+  <string>Axe</string>
+  <string>Hands</string>
+  <string>Alien1</string>
+  <string>Ghost1</string>
+  <string>Wall1</string>
+  <string>DonkeyKong1</string>
+  <string>Barrel</string>
+  <string>startingFloor</string>
+  <string>startingFloorTile</string>
+</ArrayOfString>

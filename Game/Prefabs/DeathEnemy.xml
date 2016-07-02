@@ -1,0 +1,981 @@
+<GameObject z:Id="i1" xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+  <Children>
+    <GameObject z:Id="i2">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i3" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i2"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i4" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i2"/>
+          <a:_boundingObject z:Id="i5" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i2"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>10</c:X>
+                <c:Y>195</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i6" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i2"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i7" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i2"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i8" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i9">
+        <GameObject z:Ref="i2"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>10</a:X>
+          <a:Y>195</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i10">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i11" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i10"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i12" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i10"/>
+          <a:_boundingObject z:Id="i13" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i10"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>-15</c:X>
+                <c:Y>195</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i14" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i10"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i15" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i10"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i16" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i17">
+        <GameObject z:Ref="i10"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>-15</a:X>
+          <a:Y>195</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i18">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i19" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i18"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i20" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i18"/>
+          <a:_boundingObject z:Id="i21" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i18"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>10</c:X>
+                <c:Y>170</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i22" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i18"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i23" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i18"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i24" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i25">
+        <GameObject z:Ref="i18"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>10</a:X>
+          <a:Y>170</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i26">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i27" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i26"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i28" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i26"/>
+          <a:_boundingObject z:Id="i29" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i26"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>-15</c:X>
+                <c:Y>170</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i30" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i26"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i31" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i26"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i32" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i33">
+        <GameObject z:Ref="i26"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>-15</a:X>
+          <a:Y>170</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i34">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i35" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i34"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i36" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i34"/>
+          <a:_boundingObject z:Id="i37" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i34"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>35</c:X>
+                <c:Y>170</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i38" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i34"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i39" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i34"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i40" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i41">
+        <GameObject z:Ref="i34"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>35</a:X>
+          <a:Y>170</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i42">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i43" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i42"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i44" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i42"/>
+          <a:_boundingObject z:Id="i45" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i42"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>-40</c:X>
+                <c:Y>170</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i46" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i42"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i47" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i42"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i48" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i49">
+        <GameObject z:Ref="i42"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>-40</a:X>
+          <a:Y>170</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i50">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i51" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i50"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i52" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i50"/>
+          <a:_boundingObject z:Id="i53" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i50"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>10</c:X>
+                <c:Y>145</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i54" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i50"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i55" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i50"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i56" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i57">
+        <GameObject z:Ref="i50"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>10</a:X>
+          <a:Y>145</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i58">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i59" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i58"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i60" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i58"/>
+          <a:_boundingObject z:Id="i61" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i58"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>-15</c:X>
+                <c:Y>145</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i62" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i58"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i63" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i58"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i64" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i65">
+        <GameObject z:Ref="i58"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>-15</a:X>
+          <a:Y>145</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i66">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i67" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i66"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i68" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i66"/>
+          <a:_boundingObject z:Id="i69" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i66"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>35</c:X>
+                <c:Y>145</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i70" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i66"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i71" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i66"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i72" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i73">
+        <GameObject z:Ref="i66"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>35</a:X>
+          <a:Y>145</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i74">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i75" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i74"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i76" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i74"/>
+          <a:_boundingObject z:Id="i77" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i74"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>-40</c:X>
+                <c:Y>145</c:Y>
+                <c:Z>0</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i78" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i74"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>deathBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i79" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i74"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i80" i:type="c:DeathBoxRandomizationTMPScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>DeathBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i81">
+        <GameObject z:Ref="i74"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>-40</a:X>
+          <a:Y>145</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i82">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i83" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i82"/>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i84" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i82"/>
+          <a:_boundingObject z:Id="i85" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i82"/>
+            <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Center>
+                <c:X>0</c:X>
+                <c:Y>120</c:Y>
+                <c:Z>-20</c:Z>
+              </c:Center>
+              <c:Radius>10</c:Radius>
+            </b:_boundingSphere>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+          </a:_boundingObject>
+          <a:_type>Physics</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i86" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i82"/>
+          <a:_boundingObject z:Id="i87" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i82"/>
+            <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Max>
+                <c:X>200</c:X>
+                <c:Y>320</c:Y>
+                <c:Z>180</c:Z>
+              </c:Max>
+              <c:Min>
+                <c:X>-200</c:X>
+                <c:Y>-80</c:Y>
+                <c:Z>-220</c:Z>
+              </c:Min>
+            </b:_boundingBox>
+            <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>120</c:Y>
+              <c:Z>-20</c:Z>
+            </b:_center>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+            <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>200</c:X>
+              <c:Y>200</c:Y>
+              <c:Z>200</c:Z>
+            </b:_size>
+          </a:_boundingObject>
+          <a:_type>Trigger</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i88" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i82"/>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName i:nil="true"/>
+          <a:_modelName>healthBox</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i89" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i82"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i90" i:type="c:HealthBoxScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment">
+              <c:_parent i:nil="true"/>
+              <c:physicsCollider z:Ref="i84"/>
+              <c:triggerCollider z:Ref="i86"/>
+            </b:anyType>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>HealthBox</Name>
+      <Parent i:nil="true"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i91">
+        <GameObject z:Ref="i82"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>0</a:X>
+          <a:Y>120</a:Y>
+          <a:Z>-20</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>10</_x>
+          <_y>10</_y>
+          <_z>10</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+  </Children>
+  <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+    <a:AbstractComponent z:Id="i92" i:type="a:ScriptComponent">
+      <a:Enabled>true</a:Enabled>
+      <a:Parent z:Ref="i1"/>
+      <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <b:anyType z:Id="i93" i:type="c:EnemyDeathScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment">
+          <c:_parent i:nil="true"/>
+        </b:anyType>
+      </a:_scripts>
+    </a:AbstractComponent>
+  </Components>
+  <Destroy>false</Destroy>
+  <Enabled>true</Enabled>
+  <IsPrefab>true</IsPrefab>
+  <Name>EnemyDeath</Name>
+  <Parent i:nil="true"/>
+  <Tag i:nil="true"/>
+  <Transform z:Id="i94">
+    <GameObject z:Ref="i1"/>
+    <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+      <a:X>0</a:X>
+      <a:Y>200</a:Y>
+      <a:Z>0</a:Z>
+    </Position>
+    <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+      <a:W>1</a:W>
+      <a:X>0</a:X>
+      <a:Y>0</a:Y>
+      <a:Z>0</a:Z>
+    </Rotation>
+    <Scale>
+      <_x>1</_x>
+      <_y>1</_y>
+      <_z>1</_z>
+    </Scale>
+  </Transform>
+</GameObject>

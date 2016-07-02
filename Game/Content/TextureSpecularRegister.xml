@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>null</string>
+  <string>Axe</string>
+  <string>Hands</string>
+  <string>Alien1</string>
+  <string>Radiator</string>
+  <string>Processor</string>
+  <string>Fan</string>
+  <string>Ghost1</string>
+  <string>Wall1</string>
+  <string>CompA_1</string>
+  <string>CompA_2</string>
+  <string>CompA_3</string>
+  <string>CompA_4</string>
+  <string>CompA_9</string>
+  <string>Thing</string>
+  <string>Thing2</string>
+  <string>Thing3</string>
+  <string>FanBase</string>
+  <string>FanOnly</string>
+  <string>Barrel</string>
+  <string>DonkeyKong1</string>
+  <string>startingFloor</string>
+  <string>startingFloorTile</string>
+</ArrayOfString>

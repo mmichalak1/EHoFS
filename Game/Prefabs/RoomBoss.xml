@@ -1,0 +1,1977 @@
+<GameObject z:Id="i1" xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+  <Children>
+    <GameObject z:Id="i2">
+      <Children>
+        <GameObject z:Id="i3">
+          <Children>
+            <GameObject z:Id="i4">
+              <Children/>
+              <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+                <a:AbstractComponent z:Id="i5" i:type="a:ModelComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i4"/>
+                  <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>0</b:W>
+                    <b:X>0</b:X>
+                    <b:Y>0</b:Y>
+                    <b:Z>0</b:Z>
+                  </a:_diffuseColorChanger>
+                  <a:_effectName>RenderBuffer</a:_effectName>
+                  <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>1</b:W>
+                    <b:X>1</b:X>
+                    <b:Y>1</b:Y>
+                    <b:Z>1</b:Z>
+                  </a:_emissiveColorChanger>
+                  <a:_materialName i:nil="true"/>
+                  <a:_modelName>Target</a:_modelName>
+                  <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i6" i:type="a:ColliderComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i4"/>
+                  <a:_boundingObject z:Id="i7" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                    <a:Parent z:Ref="i4"/>
+                    <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:Max>
+                        <c:X>40</c:X>
+                        <c:Y>760</c:Y>
+                        <c:Z>80</c:Z>
+                      </c:Max>
+                      <c:Min>
+                        <c:X>-40</c:X>
+                        <c:Y>600</c:Y>
+                        <c:Z>-80</c:Z>
+                      </c:Min>
+                    </b:_boundingBox>
+                    <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>680</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_center>
+                    <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_offset>
+                    <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>40</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>80</c:Z>
+                    </b:_size>
+                  </a:_boundingObject>
+                  <a:_type>Normal</a:_type>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i8" i:type="a:ScriptComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i4"/>
+                  <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:anyType z:Id="i9" i:type="c:TargetScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+                  </a:_scripts>
+                </a:AbstractComponent>
+              </Components>
+              <Destroy>false</Destroy>
+              <Enabled>true</Enabled>
+              <IsPrefab>false</IsPrefab>
+              <Name>Target</Name>
+              <Parent z:Ref="i3"/>
+              <Tag>Target</Tag>
+              <Transform z:Id="i10">
+                <GameObject z:Ref="i4"/>
+                <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:X>-1450</a:X>
+                  <a:Y>600</a:Y>
+                  <a:Z>-1450</a:Z>
+                </Position>
+                <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:W>0.707106769</a:W>
+                  <a:X>0</a:X>
+                  <a:Y>0.707106769</a:Y>
+                  <a:Z>0</a:Z>
+                </Rotation>
+                <Scale>
+                  <_x>1</_x>
+                  <_y>1</_y>
+                  <_z>1</_z>
+                </Scale>
+              </Transform>
+            </GameObject>
+          </Children>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+            <a:AbstractComponent z:Id="i11" i:type="a:ModelComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i3"/>
+              <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>0</b:W>
+                <b:X>0</b:X>
+                <b:Y>0</b:Y>
+                <b:Z>0</b:Z>
+              </a:_diffuseColorChanger>
+              <a:_effectName>RenderBuffer</a:_effectName>
+              <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>1</b:W>
+                <b:X>1</b:X>
+                <b:Y>1</b:Y>
+                <b:Z>1</b:Z>
+              </a:_emissiveColorChanger>
+              <a:_materialName i:nil="true"/>
+              <a:_modelName>thing</a:_modelName>
+              <a:_usesDefaultNormals>false</a:_usesDefaultNormals>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i12" i:type="a:RigidBodyComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i3"/>
+              <a:_affectedByGravity>true</a:_affectedByGravity>
+              <a:_bounciness>1</a:_bounciness>
+              <a:_coeffecient>0.001</a:_coeffecient>
+              <a:_mass>0</a:_mass>
+              <a:_maximumForce>2000</a:_maximumForce>
+              <a:_maximumSpeed>500</a:_maximumSpeed>
+              <a:_oneDivMass>0</a:_oneDivMass>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i13" i:type="a:ColliderComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i3"/>
+              <a:_boundingObject z:Id="i14" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                <a:Parent z:Ref="i3"/>
+                <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:Max>
+                    <c:X>-1340</c:X>
+                    <c:Y>350</c:Y>
+                    <c:Z>-1340</c:Z>
+                  </c:Max>
+                  <c:Min>
+                    <c:X>-1560</c:X>
+                    <c:Y>-150</c:Y>
+                    <c:Z>-1560</c:Z>
+                  </c:Min>
+                </b:_boundingBox>
+                <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>-1450</c:X>
+                  <c:Y>100</c:Y>
+                  <c:Z>-1450</c:Z>
+                </b:_center>
+                <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>0</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_offset>
+                <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>220</c:X>
+                  <c:Y>500</c:Y>
+                  <c:Z>220</c:Z>
+                </b:_size>
+              </a:_boundingObject>
+              <a:_type>Static</a:_type>
+            </a:AbstractComponent>
+          </Components>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>Thing</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>Thing</Tag>
+          <Transform z:Id="i15">
+            <GameObject z:Ref="i3"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>-1450</a:X>
+              <a:Y>100</a:Y>
+              <a:Z>-1450</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>2</_x>
+              <_y>2</_y>
+              <_z>2</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i16">
+          <Children>
+            <GameObject z:Id="i17">
+              <Children/>
+              <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+                <a:AbstractComponent z:Id="i18" i:type="a:ModelComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i17"/>
+                  <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>0</b:W>
+                    <b:X>0</b:X>
+                    <b:Y>0</b:Y>
+                    <b:Z>0</b:Z>
+                  </a:_diffuseColorChanger>
+                  <a:_effectName>RenderBuffer</a:_effectName>
+                  <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>1</b:W>
+                    <b:X>1</b:X>
+                    <b:Y>1</b:Y>
+                    <b:Z>1</b:Z>
+                  </a:_emissiveColorChanger>
+                  <a:_materialName i:nil="true"/>
+                  <a:_modelName>Target</a:_modelName>
+                  <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i19" i:type="a:ColliderComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i17"/>
+                  <a:_boundingObject z:Id="i20" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                    <a:Parent z:Ref="i17"/>
+                    <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:Max>
+                        <c:X>40</c:X>
+                        <c:Y>760</c:Y>
+                        <c:Z>80</c:Z>
+                      </c:Max>
+                      <c:Min>
+                        <c:X>-40</c:X>
+                        <c:Y>600</c:Y>
+                        <c:Z>-80</c:Z>
+                      </c:Min>
+                    </b:_boundingBox>
+                    <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>680</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_center>
+                    <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_offset>
+                    <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>40</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>80</c:Z>
+                    </b:_size>
+                  </a:_boundingObject>
+                  <a:_type>Normal</a:_type>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i21" i:type="a:ScriptComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i17"/>
+                  <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:anyType z:Id="i22" i:type="c:TargetScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+                  </a:_scripts>
+                </a:AbstractComponent>
+              </Components>
+              <Destroy>false</Destroy>
+              <Enabled>true</Enabled>
+              <IsPrefab>false</IsPrefab>
+              <Name>Target</Name>
+              <Parent z:Ref="i16"/>
+              <Tag>Target</Tag>
+              <Transform z:Id="i23">
+                <GameObject z:Ref="i17"/>
+                <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:X>1450</a:X>
+                  <a:Y>600</a:Y>
+                  <a:Z>-1450</a:Z>
+                </Position>
+                <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:W>0.707106769</a:W>
+                  <a:X>0</a:X>
+                  <a:Y>-0.707106769</a:Y>
+                  <a:Z>0</a:Z>
+                </Rotation>
+                <Scale>
+                  <_x>1</_x>
+                  <_y>1</_y>
+                  <_z>1</_z>
+                </Scale>
+              </Transform>
+            </GameObject>
+          </Children>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+            <a:AbstractComponent z:Id="i24" i:type="a:ModelComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i16"/>
+              <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>0</b:W>
+                <b:X>0</b:X>
+                <b:Y>0</b:Y>
+                <b:Z>0</b:Z>
+              </a:_diffuseColorChanger>
+              <a:_effectName>RenderBuffer</a:_effectName>
+              <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>1</b:W>
+                <b:X>1</b:X>
+                <b:Y>1</b:Y>
+                <b:Z>1</b:Z>
+              </a:_emissiveColorChanger>
+              <a:_materialName i:nil="true"/>
+              <a:_modelName>thing</a:_modelName>
+              <a:_usesDefaultNormals>false</a:_usesDefaultNormals>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i25" i:type="a:RigidBodyComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i16"/>
+              <a:_affectedByGravity>true</a:_affectedByGravity>
+              <a:_bounciness>1</a:_bounciness>
+              <a:_coeffecient>0.001</a:_coeffecient>
+              <a:_mass>0</a:_mass>
+              <a:_maximumForce>2000</a:_maximumForce>
+              <a:_maximumSpeed>500</a:_maximumSpeed>
+              <a:_oneDivMass>0</a:_oneDivMass>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i26" i:type="a:ColliderComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i16"/>
+              <a:_boundingObject z:Id="i27" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                <a:Parent z:Ref="i16"/>
+                <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:Max>
+                    <c:X>1560</c:X>
+                    <c:Y>350</c:Y>
+                    <c:Z>-1340</c:Z>
+                  </c:Max>
+                  <c:Min>
+                    <c:X>1340</c:X>
+                    <c:Y>-150</c:Y>
+                    <c:Z>-1560</c:Z>
+                  </c:Min>
+                </b:_boundingBox>
+                <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>1450</c:X>
+                  <c:Y>100</c:Y>
+                  <c:Z>-1450</c:Z>
+                </b:_center>
+                <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>0</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_offset>
+                <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>220</c:X>
+                  <c:Y>500</c:Y>
+                  <c:Z>220</c:Z>
+                </b:_size>
+              </a:_boundingObject>
+              <a:_type>Static</a:_type>
+            </a:AbstractComponent>
+          </Components>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>Thing</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>Thing</Tag>
+          <Transform z:Id="i28">
+            <GameObject z:Ref="i16"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>1450</a:X>
+              <a:Y>100</a:Y>
+              <a:Z>-1450</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>2</_x>
+              <_y>2</_y>
+              <_z>2</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i29">
+          <Children>
+            <GameObject z:Id="i30">
+              <Children/>
+              <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+                <a:AbstractComponent z:Id="i31" i:type="a:ModelComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i30"/>
+                  <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>0</b:W>
+                    <b:X>0</b:X>
+                    <b:Y>0</b:Y>
+                    <b:Z>0</b:Z>
+                  </a:_diffuseColorChanger>
+                  <a:_effectName>RenderBuffer</a:_effectName>
+                  <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>1</b:W>
+                    <b:X>1</b:X>
+                    <b:Y>1</b:Y>
+                    <b:Z>1</b:Z>
+                  </a:_emissiveColorChanger>
+                  <a:_materialName i:nil="true"/>
+                  <a:_modelName>Target</a:_modelName>
+                  <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i32" i:type="a:ColliderComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i30"/>
+                  <a:_boundingObject z:Id="i33" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                    <a:Parent z:Ref="i30"/>
+                    <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:Max>
+                        <c:X>40</c:X>
+                        <c:Y>760</c:Y>
+                        <c:Z>80</c:Z>
+                      </c:Max>
+                      <c:Min>
+                        <c:X>-40</c:X>
+                        <c:Y>600</c:Y>
+                        <c:Z>-80</c:Z>
+                      </c:Min>
+                    </b:_boundingBox>
+                    <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>680</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_center>
+                    <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_offset>
+                    <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>40</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>80</c:Z>
+                    </b:_size>
+                  </a:_boundingObject>
+                  <a:_type>Normal</a:_type>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i34" i:type="a:ScriptComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i30"/>
+                  <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:anyType z:Id="i35" i:type="c:TargetScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+                  </a:_scripts>
+                </a:AbstractComponent>
+              </Components>
+              <Destroy>false</Destroy>
+              <Enabled>true</Enabled>
+              <IsPrefab>false</IsPrefab>
+              <Name>Target</Name>
+              <Parent z:Ref="i29"/>
+              <Tag>Target</Tag>
+              <Transform z:Id="i36">
+                <GameObject z:Ref="i30"/>
+                <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:X>-1450</a:X>
+                  <a:Y>600</a:Y>
+                  <a:Z>1450</a:Z>
+                </Position>
+                <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:W>0.707106769</a:W>
+                  <a:X>0</a:X>
+                  <a:Y>0.707106769</a:Y>
+                  <a:Z>0</a:Z>
+                </Rotation>
+                <Scale>
+                  <_x>1</_x>
+                  <_y>1</_y>
+                  <_z>1</_z>
+                </Scale>
+              </Transform>
+            </GameObject>
+          </Children>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+            <a:AbstractComponent z:Id="i37" i:type="a:ModelComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i29"/>
+              <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>0</b:W>
+                <b:X>0</b:X>
+                <b:Y>0</b:Y>
+                <b:Z>0</b:Z>
+              </a:_diffuseColorChanger>
+              <a:_effectName>RenderBuffer</a:_effectName>
+              <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>1</b:W>
+                <b:X>1</b:X>
+                <b:Y>1</b:Y>
+                <b:Z>1</b:Z>
+              </a:_emissiveColorChanger>
+              <a:_materialName i:nil="true"/>
+              <a:_modelName>thing</a:_modelName>
+              <a:_usesDefaultNormals>false</a:_usesDefaultNormals>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i38" i:type="a:RigidBodyComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i29"/>
+              <a:_affectedByGravity>true</a:_affectedByGravity>
+              <a:_bounciness>1</a:_bounciness>
+              <a:_coeffecient>0.001</a:_coeffecient>
+              <a:_mass>0</a:_mass>
+              <a:_maximumForce>2000</a:_maximumForce>
+              <a:_maximumSpeed>500</a:_maximumSpeed>
+              <a:_oneDivMass>0</a:_oneDivMass>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i39" i:type="a:ColliderComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i29"/>
+              <a:_boundingObject z:Id="i40" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                <a:Parent z:Ref="i29"/>
+                <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:Max>
+                    <c:X>-1340</c:X>
+                    <c:Y>350</c:Y>
+                    <c:Z>1560</c:Z>
+                  </c:Max>
+                  <c:Min>
+                    <c:X>-1560</c:X>
+                    <c:Y>-150</c:Y>
+                    <c:Z>1340</c:Z>
+                  </c:Min>
+                </b:_boundingBox>
+                <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>-1450</c:X>
+                  <c:Y>100</c:Y>
+                  <c:Z>1450</c:Z>
+                </b:_center>
+                <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>0</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_offset>
+                <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>220</c:X>
+                  <c:Y>500</c:Y>
+                  <c:Z>220</c:Z>
+                </b:_size>
+              </a:_boundingObject>
+              <a:_type>Static</a:_type>
+            </a:AbstractComponent>
+          </Components>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>Thing</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>Thing</Tag>
+          <Transform z:Id="i41">
+            <GameObject z:Ref="i29"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>-1450</a:X>
+              <a:Y>100</a:Y>
+              <a:Z>1450</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>2</_x>
+              <_y>2</_y>
+              <_z>2</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i42">
+          <Children>
+            <GameObject z:Id="i43">
+              <Children/>
+              <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+                <a:AbstractComponent z:Id="i44" i:type="a:ModelComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i43"/>
+                  <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>0</b:W>
+                    <b:X>0</b:X>
+                    <b:Y>0</b:Y>
+                    <b:Z>0</b:Z>
+                  </a:_diffuseColorChanger>
+                  <a:_effectName>RenderBuffer</a:_effectName>
+                  <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>1</b:W>
+                    <b:X>1</b:X>
+                    <b:Y>1</b:Y>
+                    <b:Z>1</b:Z>
+                  </a:_emissiveColorChanger>
+                  <a:_materialName i:nil="true"/>
+                  <a:_modelName>Target</a:_modelName>
+                  <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i45" i:type="a:ColliderComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i43"/>
+                  <a:_boundingObject z:Id="i46" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                    <a:Parent z:Ref="i43"/>
+                    <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:Max>
+                        <c:X>40</c:X>
+                        <c:Y>760</c:Y>
+                        <c:Z>80</c:Z>
+                      </c:Max>
+                      <c:Min>
+                        <c:X>-40</c:X>
+                        <c:Y>600</c:Y>
+                        <c:Z>-80</c:Z>
+                      </c:Min>
+                    </b:_boundingBox>
+                    <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>680</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_center>
+                    <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_offset>
+                    <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>40</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>80</c:Z>
+                    </b:_size>
+                  </a:_boundingObject>
+                  <a:_type>Normal</a:_type>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i47" i:type="a:ScriptComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i43"/>
+                  <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:anyType z:Id="i48" i:type="c:TargetScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+                  </a:_scripts>
+                </a:AbstractComponent>
+              </Components>
+              <Destroy>false</Destroy>
+              <Enabled>true</Enabled>
+              <IsPrefab>false</IsPrefab>
+              <Name>Target</Name>
+              <Parent z:Ref="i42"/>
+              <Tag>Target</Tag>
+              <Transform z:Id="i49">
+                <GameObject z:Ref="i43"/>
+                <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:X>1450</a:X>
+                  <a:Y>600</a:Y>
+                  <a:Z>1450</a:Z>
+                </Position>
+                <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:W>0.707106769</a:W>
+                  <a:X>0</a:X>
+                  <a:Y>-0.707106769</a:Y>
+                  <a:Z>0</a:Z>
+                </Rotation>
+                <Scale>
+                  <_x>1</_x>
+                  <_y>1</_y>
+                  <_z>1</_z>
+                </Scale>
+              </Transform>
+            </GameObject>
+          </Children>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+            <a:AbstractComponent z:Id="i50" i:type="a:ModelComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i42"/>
+              <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>0</b:W>
+                <b:X>0</b:X>
+                <b:Y>0</b:Y>
+                <b:Z>0</b:Z>
+              </a:_diffuseColorChanger>
+              <a:_effectName>RenderBuffer</a:_effectName>
+              <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>1</b:W>
+                <b:X>1</b:X>
+                <b:Y>1</b:Y>
+                <b:Z>1</b:Z>
+              </a:_emissiveColorChanger>
+              <a:_materialName i:nil="true"/>
+              <a:_modelName>thing</a:_modelName>
+              <a:_usesDefaultNormals>false</a:_usesDefaultNormals>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i51" i:type="a:RigidBodyComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i42"/>
+              <a:_affectedByGravity>true</a:_affectedByGravity>
+              <a:_bounciness>1</a:_bounciness>
+              <a:_coeffecient>0.001</a:_coeffecient>
+              <a:_mass>0</a:_mass>
+              <a:_maximumForce>2000</a:_maximumForce>
+              <a:_maximumSpeed>500</a:_maximumSpeed>
+              <a:_oneDivMass>0</a:_oneDivMass>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i52" i:type="a:ColliderComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i42"/>
+              <a:_boundingObject z:Id="i53" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                <a:Parent z:Ref="i42"/>
+                <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:Max>
+                    <c:X>1560</c:X>
+                    <c:Y>350</c:Y>
+                    <c:Z>1560</c:Z>
+                  </c:Max>
+                  <c:Min>
+                    <c:X>1340</c:X>
+                    <c:Y>-150</c:Y>
+                    <c:Z>1340</c:Z>
+                  </c:Min>
+                </b:_boundingBox>
+                <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>1450</c:X>
+                  <c:Y>100</c:Y>
+                  <c:Z>1450</c:Z>
+                </b:_center>
+                <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>0</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_offset>
+                <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>220</c:X>
+                  <c:Y>500</c:Y>
+                  <c:Z>220</c:Z>
+                </b:_size>
+              </a:_boundingObject>
+              <a:_type>Static</a:_type>
+            </a:AbstractComponent>
+          </Components>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>Thing</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>Thing</Tag>
+          <Transform z:Id="i54">
+            <GameObject z:Ref="i42"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>1450</a:X>
+              <a:Y>100</a:Y>
+              <a:Z>1450</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>2</_x>
+              <_y>2</_y>
+              <_z>2</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i55">
+          <Children>
+            <GameObject z:Id="i56">
+              <Children/>
+              <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+                <a:AbstractComponent z:Id="i57" i:type="a:ModelComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i56"/>
+                  <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>0</b:W>
+                    <b:X>0</b:X>
+                    <b:Y>0</b:Y>
+                    <b:Z>0</b:Z>
+                  </a:_diffuseColorChanger>
+                  <a:_effectName>RenderBuffer</a:_effectName>
+                  <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>1</b:W>
+                    <b:X>1</b:X>
+                    <b:Y>1</b:Y>
+                    <b:Z>1</b:Z>
+                  </a:_emissiveColorChanger>
+                  <a:_materialName i:nil="true"/>
+                  <a:_modelName>Target</a:_modelName>
+                  <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i58" i:type="a:ColliderComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i56"/>
+                  <a:_boundingObject z:Id="i59" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                    <a:Parent z:Ref="i56"/>
+                    <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:Max>
+                        <c:X>40</c:X>
+                        <c:Y>760</c:Y>
+                        <c:Z>80</c:Z>
+                      </c:Max>
+                      <c:Min>
+                        <c:X>-40</c:X>
+                        <c:Y>600</c:Y>
+                        <c:Z>-80</c:Z>
+                      </c:Min>
+                    </b:_boundingBox>
+                    <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>680</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_center>
+                    <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_offset>
+                    <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>40</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>80</c:Z>
+                    </b:_size>
+                  </a:_boundingObject>
+                  <a:_type>Normal</a:_type>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i60" i:type="a:ScriptComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i56"/>
+                  <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:anyType z:Id="i61" i:type="c:TargetScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+                  </a:_scripts>
+                </a:AbstractComponent>
+              </Components>
+              <Destroy>false</Destroy>
+              <Enabled>true</Enabled>
+              <IsPrefab>false</IsPrefab>
+              <Name>Target</Name>
+              <Parent z:Ref="i55"/>
+              <Tag>Target</Tag>
+              <Transform z:Id="i62">
+                <GameObject z:Ref="i56"/>
+                <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:X>1450</a:X>
+                  <a:Y>600</a:Y>
+                  <a:Z>0</a:Z>
+                </Position>
+                <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:W>0.707106769</a:W>
+                  <a:X>0</a:X>
+                  <a:Y>-0.707106769</a:Y>
+                  <a:Z>0</a:Z>
+                </Rotation>
+                <Scale>
+                  <_x>1</_x>
+                  <_y>1</_y>
+                  <_z>1</_z>
+                </Scale>
+              </Transform>
+            </GameObject>
+          </Children>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+            <a:AbstractComponent z:Id="i63" i:type="a:ModelComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i55"/>
+              <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>0</b:W>
+                <b:X>0</b:X>
+                <b:Y>0</b:Y>
+                <b:Z>0</b:Z>
+              </a:_diffuseColorChanger>
+              <a:_effectName>RenderBuffer</a:_effectName>
+              <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>1</b:W>
+                <b:X>1</b:X>
+                <b:Y>1</b:Y>
+                <b:Z>1</b:Z>
+              </a:_emissiveColorChanger>
+              <a:_materialName i:nil="true"/>
+              <a:_modelName>thing</a:_modelName>
+              <a:_usesDefaultNormals>false</a:_usesDefaultNormals>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i64" i:type="a:RigidBodyComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i55"/>
+              <a:_affectedByGravity>true</a:_affectedByGravity>
+              <a:_bounciness>1</a:_bounciness>
+              <a:_coeffecient>0.001</a:_coeffecient>
+              <a:_mass>0</a:_mass>
+              <a:_maximumForce>2000</a:_maximumForce>
+              <a:_maximumSpeed>500</a:_maximumSpeed>
+              <a:_oneDivMass>0</a:_oneDivMass>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i65" i:type="a:ColliderComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i55"/>
+              <a:_boundingObject z:Id="i66" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                <a:Parent z:Ref="i55"/>
+                <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:Max>
+                    <c:X>1560</c:X>
+                    <c:Y>350</c:Y>
+                    <c:Z>110</c:Z>
+                  </c:Max>
+                  <c:Min>
+                    <c:X>1340</c:X>
+                    <c:Y>-150</c:Y>
+                    <c:Z>-110</c:Z>
+                  </c:Min>
+                </b:_boundingBox>
+                <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>1450</c:X>
+                  <c:Y>100</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_center>
+                <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>0</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_offset>
+                <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>220</c:X>
+                  <c:Y>500</c:Y>
+                  <c:Z>220</c:Z>
+                </b:_size>
+              </a:_boundingObject>
+              <a:_type>Static</a:_type>
+            </a:AbstractComponent>
+          </Components>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>Thing</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>Thing</Tag>
+          <Transform z:Id="i67">
+            <GameObject z:Ref="i55"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>1450</a:X>
+              <a:Y>100</a:Y>
+              <a:Z>0</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>2</_x>
+              <_y>2</_y>
+              <_z>2</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i68">
+          <Children>
+            <GameObject z:Id="i69">
+              <Children/>
+              <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+                <a:AbstractComponent z:Id="i70" i:type="a:ModelComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i69"/>
+                  <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>0</b:W>
+                    <b:X>0</b:X>
+                    <b:Y>0</b:Y>
+                    <b:Z>0</b:Z>
+                  </a:_diffuseColorChanger>
+                  <a:_effectName>RenderBuffer</a:_effectName>
+                  <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                    <b:W>1</b:W>
+                    <b:X>1</b:X>
+                    <b:Y>1</b:Y>
+                    <b:Z>1</b:Z>
+                  </a:_emissiveColorChanger>
+                  <a:_materialName i:nil="true"/>
+                  <a:_modelName>Target</a:_modelName>
+                  <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i71" i:type="a:ColliderComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i69"/>
+                  <a:_boundingObject z:Id="i72" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                    <a:Parent z:Ref="i69"/>
+                    <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:Max>
+                        <c:X>40</c:X>
+                        <c:Y>760</c:Y>
+                        <c:Z>80</c:Z>
+                      </c:Max>
+                      <c:Min>
+                        <c:X>-40</c:X>
+                        <c:Y>600</c:Y>
+                        <c:Z>-80</c:Z>
+                      </c:Min>
+                    </b:_boundingBox>
+                    <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>680</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_center>
+                    <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>0</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>0</c:Z>
+                    </b:_offset>
+                    <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                      <c:X>40</c:X>
+                      <c:Y>80</c:Y>
+                      <c:Z>80</c:Z>
+                    </b:_size>
+                  </a:_boundingObject>
+                  <a:_type>Normal</a:_type>
+                </a:AbstractComponent>
+                <a:AbstractComponent z:Id="i73" i:type="a:ScriptComponent">
+                  <a:Enabled>true</a:Enabled>
+                  <a:Parent z:Ref="i69"/>
+                  <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+                    <b:anyType z:Id="i74" i:type="c:TargetScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+                  </a:_scripts>
+                </a:AbstractComponent>
+              </Components>
+              <Destroy>false</Destroy>
+              <Enabled>true</Enabled>
+              <IsPrefab>false</IsPrefab>
+              <Name>Target</Name>
+              <Parent z:Ref="i68"/>
+              <Tag>Target</Tag>
+              <Transform z:Id="i75">
+                <GameObject z:Ref="i69"/>
+                <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:X>-1450</a:X>
+                  <a:Y>600</a:Y>
+                  <a:Z>0</a:Z>
+                </Position>
+                <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <a:W>0.707106769</a:W>
+                  <a:X>0</a:X>
+                  <a:Y>0.707106769</a:Y>
+                  <a:Z>0</a:Z>
+                </Rotation>
+                <Scale>
+                  <_x>1</_x>
+                  <_y>1</_y>
+                  <_z>1</_z>
+                </Scale>
+              </Transform>
+            </GameObject>
+          </Children>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+            <a:AbstractComponent z:Id="i76" i:type="a:ModelComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i68"/>
+              <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>0</b:W>
+                <b:X>0</b:X>
+                <b:Y>0</b:Y>
+                <b:Z>0</b:Z>
+              </a:_diffuseColorChanger>
+              <a:_effectName>RenderBuffer</a:_effectName>
+              <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>1</b:W>
+                <b:X>1</b:X>
+                <b:Y>1</b:Y>
+                <b:Z>1</b:Z>
+              </a:_emissiveColorChanger>
+              <a:_materialName i:nil="true"/>
+              <a:_modelName>thing</a:_modelName>
+              <a:_usesDefaultNormals>false</a:_usesDefaultNormals>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i77" i:type="a:RigidBodyComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i68"/>
+              <a:_affectedByGravity>true</a:_affectedByGravity>
+              <a:_bounciness>1</a:_bounciness>
+              <a:_coeffecient>0.001</a:_coeffecient>
+              <a:_mass>0</a:_mass>
+              <a:_maximumForce>2000</a:_maximumForce>
+              <a:_maximumSpeed>500</a:_maximumSpeed>
+              <a:_oneDivMass>0</a:_oneDivMass>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i78" i:type="a:ColliderComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i68"/>
+              <a:_boundingObject z:Id="i79" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                <a:Parent z:Ref="i68"/>
+                <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:Max>
+                    <c:X>-1340</c:X>
+                    <c:Y>350</c:Y>
+                    <c:Z>110</c:Z>
+                  </c:Max>
+                  <c:Min>
+                    <c:X>-1560</c:X>
+                    <c:Y>-150</c:Y>
+                    <c:Z>-110</c:Z>
+                  </c:Min>
+                </b:_boundingBox>
+                <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>-1450</c:X>
+                  <c:Y>100</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_center>
+                <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>0</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_offset>
+                <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>220</c:X>
+                  <c:Y>500</c:Y>
+                  <c:Z>220</c:Z>
+                </b:_size>
+              </a:_boundingObject>
+              <a:_type>Static</a:_type>
+            </a:AbstractComponent>
+          </Components>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>Thing</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>Thing</Tag>
+          <Transform z:Id="i80">
+            <GameObject z:Ref="i68"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>-1450</a:X>
+              <a:Y>100</a:Y>
+              <a:Z>0</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>2</_x>
+              <_y>2</_y>
+              <_z>2</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i81">
+          <Children>
+          </Children>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+            <a:AbstractComponent z:Id="i96" i:type="a:ModelComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i81"/>
+              <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>0</b:W>
+                <b:X>0</b:X>
+                <b:Y>0</b:Y>
+                <b:Z>0</b:Z>
+              </a:_diffuseColorChanger>
+              <a:_effectName>RenderBuffer</a:_effectName>
+              <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                <b:W>1</b:W>
+                <b:X>1</b:X>
+                <b:Y>1</b:Y>
+                <b:Z>1</b:Z>
+              </a:_emissiveColorChanger>
+              <a:_materialName i:nil="true"/>
+              <a:_modelName>Processor</a:_modelName>
+              <a:_usesDefaultNormals>false</a:_usesDefaultNormals>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i97" i:type="a:RigidBodyComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i81"/>
+              <a:_affectedByGravity>true</a:_affectedByGravity>
+              <a:_bounciness>1</a:_bounciness>
+              <a:_coeffecient>0.001</a:_coeffecient>
+              <a:_mass>0</a:_mass>
+              <a:_maximumForce>2000</a:_maximumForce>
+              <a:_maximumSpeed>500</a:_maximumSpeed>
+              <a:_oneDivMass>0</a:_oneDivMass>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i98" i:type="a:ColliderComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i81"/>
+              <a:_boundingObject z:Id="i99" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                <a:Parent z:Ref="i81"/>
+                <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:Max>
+                    <c:X>280</c:X>
+                    <c:Y>15</c:Y>
+                    <c:Z>280</c:Z>
+                  </c:Max>
+                  <c:Min>
+                    <c:X>-280</c:X>
+                    <c:Y>-85</c:Y>
+                    <c:Z>-280</c:Z>
+                  </c:Min>
+                </b:_boundingBox>
+                <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>-35</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_center>
+                <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>0</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_offset>
+                <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>280</c:X>
+                  <c:Y>50</c:Y>
+                  <c:Z>280</c:Z>
+                </b:_size>
+              </a:_boundingObject>
+              <a:_type>Static</a:_type>
+            </a:AbstractComponent>
+            <a:AbstractComponent z:Id="i100" i:type="a:ColliderComponent">
+              <a:Enabled>true</a:Enabled>
+              <a:Parent z:Ref="i81"/>
+              <a:_boundingObject z:Id="i101" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+                <a:Parent z:Ref="i81"/>
+                <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:Max>
+                    <c:X>250</c:X>
+                    <c:Y>15</c:Y>
+                    <c:Z>250</c:Z>
+                  </c:Max>
+                  <c:Min>
+                    <c:X>-250</c:X>
+                    <c:Y>-85</c:Y>
+                    <c:Z>-250</c:Z>
+                  </c:Min>
+                </b:_boundingBox>
+                <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>-35</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_center>
+                <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>0</c:X>
+                  <c:Y>0</c:Y>
+                  <c:Z>0</c:Z>
+                </b:_offset>
+                <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+                  <c:X>250</c:X>
+                  <c:Y>50</c:Y>
+                  <c:Z>250</c:Z>
+                </b:_size>
+              </a:_boundingObject>
+              <a:_type>Static</a:_type>
+            </a:AbstractComponent>
+          </Components>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>Processor</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>BossPlatform</Tag>
+          <Transform z:Id="i102">
+            <GameObject z:Ref="i81"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>0</a:X>
+              <a:Y>-35</a:Y>
+              <a:Z>0</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>1</_x>
+              <_y>1</_y>
+              <_z>1</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i103">
+          <Children/>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components"/>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>EnemySpawn</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>EnemySpawn</Tag>
+          <Transform z:Id="i104">
+            <GameObject z:Ref="i103"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>0</a:X>
+              <a:Y>400</a:Y>
+              <a:Z>0</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>1</_x>
+              <_y>1</_y>
+              <_z>1</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i105">
+          <Children/>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components"/>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>EnemySpawn</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>EnemySpawn</Tag>
+          <Transform z:Id="i106">
+            <GameObject z:Ref="i105"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>0</a:X>
+              <a:Y>200</a:Y>
+              <a:Z>1000</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>1</_x>
+              <_y>1</_y>
+              <_z>1</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+        <GameObject z:Id="i107">
+          <Children/>
+          <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components"/>
+          <Destroy>false</Destroy>
+          <Enabled>true</Enabled>
+          <IsPrefab>false</IsPrefab>
+          <Name>EnemySpawn</Name>
+          <Parent z:Ref="i2"/>
+          <Tag>EnemySpawn</Tag>
+          <Transform z:Id="i108">
+            <GameObject z:Ref="i107"/>
+            <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:X>0</a:X>
+              <a:Y>200</a:Y>
+              <a:Z>-1000</a:Z>
+            </Position>
+            <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <a:W>1</a:W>
+              <a:X>0</a:X>
+              <a:Y>0</a:Y>
+              <a:Z>0</a:Z>
+            </Rotation>
+            <Scale>
+              <_x>1</_x>
+              <_y>1</_y>
+              <_z>1</_z>
+            </Scale>
+          </Transform>
+        </GameObject>
+      </Children>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i109" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i2"/>
+          <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>0</b:W>
+            <b:X>0</b:X>
+            <b:Y>0</b:Y>
+            <b:Z>0</b:Z>
+          </a:_diffuseColorChanger>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName>Default</a:_materialName>
+          <a:_modelName>Floor1</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i110" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i2"/>
+          <a:_affectedByGravity>false</a:_affectedByGravity>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i111" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i2"/>
+          <a:_boundingObject z:Id="i112" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i2"/>
+            <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Max>
+                <c:X>2500</c:X>
+                <c:Y>100</c:Y>
+                <c:Z>2500</c:Z>
+              </c:Max>
+              <c:Min>
+                <c:X>-2500</c:X>
+                <c:Y>-100</c:Y>
+                <c:Z>-2500</c:Z>
+              </c:Min>
+            </b:_boundingBox>
+            <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_center>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+            <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>2500</c:X>
+              <c:Y>100</c:Y>
+              <c:Z>2500</c:Z>
+            </b:_size>
+          </a:_boundingObject>
+          <a:_type>Static</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i113" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i2"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i114" i:type="c:BossRoomScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>Floor</Name>
+      <Parent z:Ref="i1"/>
+      <Tag i:nil="true"/>
+      <Transform z:Id="i115">
+        <GameObject z:Ref="i2"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>1</_x>
+          <_y>1</_y>
+          <_z>1</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i116">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i117" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i116"/>
+          <a:_affectedByGravity>false</a:_affectedByGravity>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i118" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i116"/>
+          <a:_boundingObject z:Id="i119" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i116"/>
+            <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Max>
+                <c:X>2000</c:X>
+                <c:Y>3000</c:Y>
+                <c:Z>100</c:Z>
+              </c:Max>
+              <c:Min>
+                <c:X>-2000</c:X>
+                <c:Y>-1000</c:Y>
+                <c:Z>-100</c:Z>
+              </c:Min>
+            </b:_boundingBox>
+            <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_center>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>1000</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+            <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>2000</c:X>
+              <c:Y>2000</c:Y>
+              <c:Z>100</c:Z>
+            </b:_size>
+          </a:_boundingObject>
+          <a:_type>Static</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i120" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i116"/>
+          <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>0</b:W>
+            <b:X>0</b:X>
+            <b:Y>0</b:Y>
+            <b:Z>0</b:Z>
+          </a:_diffuseColorChanger>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName>Mirror</a:_materialName>
+          <a:_modelName>Wall1</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i121" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i116"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i122" i:type="c:WallScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment">
+              <c:IsUp>true</c:IsUp>
+              <c:_isLowering>false</c:_isLowering>
+              <c:_isRaising>false</c:_isRaising>
+              <c:_parent z:Ref="i116"/>
+            </b:anyType>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>Wall</Name>
+      <Parent z:Ref="i1"/>
+      <Tag>Up</Tag>
+      <Transform z:Id="i123">
+        <GameObject z:Ref="i116"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>0</a:X>
+          <a:Y>100</a:Y>
+          <a:Z>1750</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>1</a:W>
+          <a:X>0</a:X>
+          <a:Y>0</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>0.9714</_x>
+          <_y>1</_y>
+          <_z>1</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i124">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i125" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i124"/>
+          <a:_affectedByGravity>false</a:_affectedByGravity>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i126" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i124"/>
+          <a:_boundingObject z:Id="i127" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i124"/>
+            <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Max>
+                <c:X>100</c:X>
+                <c:Y>3000</c:Y>
+                <c:Z>2000</c:Z>
+              </c:Max>
+              <c:Min>
+                <c:X>-100</c:X>
+                <c:Y>-1000</c:Y>
+                <c:Z>-2000</c:Z>
+              </c:Min>
+            </b:_boundingBox>
+            <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_center>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>1000</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+            <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>100</c:X>
+              <c:Y>2000</c:Y>
+              <c:Z>2000</c:Z>
+            </b:_size>
+          </a:_boundingObject>
+          <a:_type>Static</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i128" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i124"/>
+          <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>0</b:W>
+            <b:X>0</b:X>
+            <b:Y>0</b:Y>
+            <b:Z>0</b:Z>
+          </a:_diffuseColorChanger>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName>Mirror</a:_materialName>
+          <a:_modelName>Wall1</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i129" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i124"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i130" i:type="c:WallScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment">
+              <c:IsUp>true</c:IsUp>
+              <c:_isLowering>false</c:_isLowering>
+              <c:_isRaising>false</c:_isRaising>
+              <c:_parent z:Ref="i124"/>
+            </b:anyType>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>Wall</Name>
+      <Parent z:Ref="i1"/>
+      <Tag>Right</Tag>
+      <Transform z:Id="i131">
+        <GameObject z:Ref="i124"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>1750</a:X>
+          <a:Y>100</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>0.707106769</a:W>
+          <a:X>0</a:X>
+          <a:Y>0.707106769</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>0.9714</_x>
+          <_y>1</_y>
+          <_z>1</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i132">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i133" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i132"/>
+          <a:_affectedByGravity>false</a:_affectedByGravity>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i134" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i132"/>
+          <a:_boundingObject z:Id="i135" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i132"/>
+            <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Max>
+                <c:X>2000</c:X>
+                <c:Y>3000</c:Y>
+                <c:Z>100</c:Z>
+              </c:Max>
+              <c:Min>
+                <c:X>-2000</c:X>
+                <c:Y>-1000</c:Y>
+                <c:Z>-100</c:Z>
+              </c:Min>
+            </b:_boundingBox>
+            <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_center>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>1000</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+            <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>2000</c:X>
+              <c:Y>2000</c:Y>
+              <c:Z>100</c:Z>
+            </b:_size>
+          </a:_boundingObject>
+          <a:_type>Static</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i136" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i132"/>
+          <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>0</b:W>
+            <b:X>0</b:X>
+            <b:Y>0</b:Y>
+            <b:Z>0</b:Z>
+          </a:_diffuseColorChanger>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName>Mirror</a:_materialName>
+          <a:_modelName>Wall1</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i137" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i132"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i138" i:type="c:WallScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment">
+              <c:IsUp>true</c:IsUp>
+              <c:_isLowering>false</c:_isLowering>
+              <c:_isRaising>false</c:_isRaising>
+              <c:_parent z:Ref="i132"/>
+            </b:anyType>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>Wall</Name>
+      <Parent z:Ref="i1"/>
+      <Tag>Down</Tag>
+      <Transform z:Id="i139">
+        <GameObject z:Ref="i132"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>0</a:X>
+          <a:Y>100</a:Y>
+          <a:Z>-1750</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>-4.371139E-08</a:W>
+          <a:X>0</a:X>
+          <a:Y>1</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>0.9714</_x>
+          <_y>1</_y>
+          <_z>1</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+    <GameObject z:Id="i140">
+      <Children/>
+      <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+        <a:AbstractComponent z:Id="i141" i:type="a:RigidBodyComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i140"/>
+          <a:_affectedByGravity>false</a:_affectedByGravity>
+          <a:_bounciness>1</a:_bounciness>
+          <a:_coeffecient>0.001</a:_coeffecient>
+          <a:_mass>0</a:_mass>
+          <a:_maximumForce>2000</a:_maximumForce>
+          <a:_maximumSpeed>500</a:_maximumSpeed>
+          <a:_oneDivMass>0</a:_oneDivMass>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i142" i:type="a:ColliderComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i140"/>
+          <a:_boundingObject z:Id="i143" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+            <a:Parent z:Ref="i140"/>
+            <b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:Max>
+                <c:X>100</c:X>
+                <c:Y>3000</c:Y>
+                <c:Z>2000</c:Z>
+              </c:Max>
+              <c:Min>
+                <c:X>-100</c:X>
+                <c:Y>-1000</c:Y>
+                <c:Z>-2000</c:Z>
+              </c:Min>
+            </b:_boundingBox>
+            <b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>0</c:Y>
+              <c:Z>0</c:Z>
+            </b:_center>
+            <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>0</c:X>
+              <c:Y>1000</c:Y>
+              <c:Z>0</c:Z>
+            </b:_offset>
+            <b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+              <c:X>100</c:X>
+              <c:Y>2000</c:Y>
+              <c:Z>2000</c:Z>
+            </b:_size>
+          </a:_boundingObject>
+          <a:_type>Static</a:_type>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i144" i:type="a:ModelComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i140"/>
+          <a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>0</b:W>
+            <b:X>0</b:X>
+            <b:Y>0</b:Y>
+            <b:Z>0</b:Z>
+          </a:_diffuseColorChanger>
+          <a:_effectName>RenderBuffer</a:_effectName>
+          <a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+            <b:W>1</b:W>
+            <b:X>1</b:X>
+            <b:Y>1</b:Y>
+            <b:Z>1</b:Z>
+          </a:_emissiveColorChanger>
+          <a:_materialName>Mirror</a:_materialName>
+          <a:_modelName>Wall1</a:_modelName>
+          <a:_usesDefaultNormals>true</a:_usesDefaultNormals>
+        </a:AbstractComponent>
+        <a:AbstractComponent z:Id="i145" i:type="a:ScriptComponent">
+          <a:Enabled>true</a:Enabled>
+          <a:Parent z:Ref="i140"/>
+          <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+            <b:anyType z:Id="i146" i:type="c:WallScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment">
+              <c:IsUp>true</c:IsUp>
+              <c:_isLowering>false</c:_isLowering>
+              <c:_isRaising>false</c:_isRaising>
+              <c:_parent z:Ref="i140"/>
+            </b:anyType>
+          </a:_scripts>
+        </a:AbstractComponent>
+      </Components>
+      <Destroy>false</Destroy>
+      <Enabled>true</Enabled>
+      <IsPrefab>false</IsPrefab>
+      <Name>Wall</Name>
+      <Parent z:Ref="i1"/>
+      <Tag>Left</Tag>
+      <Transform z:Id="i147">
+        <GameObject z:Ref="i140"/>
+        <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:X>-1750</a:X>
+          <a:Y>100</a:Y>
+          <a:Z>0</a:Z>
+        </Position>
+        <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <a:W>0.707106769</a:W>
+          <a:X>0</a:X>
+          <a:Y>-0.707106769</a:Y>
+          <a:Z>0</a:Z>
+        </Rotation>
+        <Scale>
+          <_x>0.9714</_x>
+          <_y>1</_y>
+          <_z>1</_z>
+        </Scale>
+      </Transform>
+    </GameObject>
+  </Children>
+  <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+    <a:AbstractComponent z:Id="i148" i:type="a:ScriptComponent">
+      <a:Enabled>true</a:Enabled>
+      <a:Parent z:Ref="i1"/>
+      <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <b:anyType z:Id="i149" i:type="c:RoomScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment">
+          <c:IsFinished>false</c:IsFinished>
+          <c:_down i:nil="true"/>
+          <c:_enemyCounter>0</c:_enemyCounter>
+          <c:_floor z:Ref="i2"/>
+          <c:_left i:nil="true"/>
+          <c:_parent z:Ref="i1"/>
+          <c:_right i:nil="true"/>
+          <c:_sound z:Id="i150" xmlns:d="http://schemas.datacontract.org/2004/07/OurGame">
+            <a:Enabled>true</a:Enabled>
+            <a:Parent z:Ref="i1"/>
+            <d:_playList/>
+          </c:_sound>
+          <c:_up i:nil="true"/>
+        </b:anyType>
+      </a:_scripts>
+    </a:AbstractComponent>
+    <a:AbstractComponent z:Id="i151" i:type="a:ColliderComponent">
+	<a:Enabled>true</a:Enabled>
+	<a:Parent z:Ref="i1"/>
+	<a:_boundingObject z:Id="i152" i:type="b:Box" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+	<a:Parent z:Ref="i1"/>
+	<b:_boundingBox xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+	 <c:Max>
+ 	 <c:X>1600</c:X>
+						<c:Y>1600</c:Y>
+						<c:Z>1600</c:Z>
+					</c:Max>
+					<c:Min>
+						<c:X>-1600</c:X>
+						<c:Y>-1600</c:Y>
+						<c:Z>-1600</c:Z>
+					</c:Min>
+				</b:_boundingBox>
+				<b:_center xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+					<c:X>0</c:X>
+					<c:Y>0</c:Y>
+					<c:Z>0</c:Z>
+				</b:_center>
+				<b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+					<c:X>0</c:X>
+					<c:Y>0</c:Y>
+					<c:Z>0</c:Z>
+				</b:_offset>
+				<b:_size xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+					<c:X>1600</c:X>
+					<c:Y>1600</c:Y>
+					<c:Z>1600</c:Z>
+				</b:_size>
+			</a:_boundingObject>
+			<a:_type>Trigger</a:_type>
+		</a:AbstractComponent>
+    <a:AbstractComponent z:Ref="i150"/>
+  </Components>
+  <Destroy>false</Destroy>
+  <Enabled>true</Enabled>
+  <IsPrefab>true</IsPrefab>
+  <Name>RoomBoss</Name>
+  <Parent i:nil="true"/>
+  <Tag i:nil="true"/>
+  <Transform z:Id="i153">
+    <GameObject z:Ref="i1"/>
+    <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+      <a:X>0</a:X>
+      <a:Y>0</a:Y>
+      <a:Z>0</a:Z>
+    </Position>
+    <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+      <a:W>1</a:W>
+      <a:X>0</a:X>
+      <a:Y>0</a:Y>
+      <a:Z>0</a:Z>
+    </Rotation>
+    <Scale>
+      <_x>1</_x>
+      <_y>1</_y>
+      <_z>1</_z>
+    </Scale>
+  </Transform>
+</GameObject>

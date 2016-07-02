@@ -1,0 +1,67 @@
+<GameObject z:Id="i1" xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+  <Children/>
+  <Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+    <a:AbstractComponent z:Id="i3" i:type="a:ScriptComponent">
+      <a:Enabled>true</a:Enabled>
+      <a:Parent z:Ref="i1"/>
+      <a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+        <b:anyType z:Id="i4" i:type="c:BulletScript" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.Enviroment"/>
+      </a:_scripts>
+    </a:AbstractComponent>
+    <a:AbstractComponent z:Id="i5" i:type="a:RigidBodyComponent">
+      <a:Enabled>true</a:Enabled>
+      <a:Parent z:Ref="i1"/>
+      <a:_bounciness>1</a:_bounciness>
+      <a:_coeffecient>0.001</a:_coeffecient>
+      <a:_mass>1</a:_mass>
+      <a:_maximumForce>2000</a:_maximumForce>
+      <a:_maximumSpeed>500</a:_maximumSpeed>
+      <a:_oneDivMass>0</a:_oneDivMass>
+    </a:AbstractComponent>
+    <a:AbstractComponent z:Id="i6" i:type="a:ColliderComponent">
+      <a:Enabled>true</a:Enabled>
+      <a:Parent z:Ref="i1"/>
+      <a:_boundingObject z:Id="i7" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+        <a:Parent z:Ref="i1"/>
+        <b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <c:Center>
+            <c:X>0</c:X>
+            <c:Y>0</c:Y>
+            <c:Z>0</c:Z>
+          </c:Center>
+          <c:Radius>0.1</c:Radius>
+        </b:_boundingSphere>
+        <b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+          <c:X>0</c:X>
+          <c:Y>0</c:Y>
+          <c:Z>0</c:Z>
+        </b:_offset>
+      </a:_boundingObject>
+      <a:_type>Normal</a:_type>
+    </a:AbstractComponent>
+  </Components>
+  <Enabled>true</Enabled>
+  <IsPrefab>true</IsPrefab>
+  <Name>Bullet</Name>
+  <Parent i:nil="true"/>
+  <Tag>Bullet</Tag>
+  <Transform z:Id="i8">
+    <GameObject z:Ref="i1"/>
+    <Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+      <a:X>0</a:X>
+      <a:Y>200</a:Y>
+      <a:Z>0</a:Z>
+    </Position>
+    <Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+      <a:W>1</a:W>
+      <a:X>0</a:X>
+      <a:Y>0</a:Y>
+      <a:Z>0</a:Z>
+    </Rotation>
+    <Scale>
+      <_x>10</_x>
+      <_y>10</_y>
+      <_z>10</_z>
+    </Scale>
+  </Transform>
+</GameObject>

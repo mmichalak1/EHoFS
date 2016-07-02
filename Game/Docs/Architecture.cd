@@ -1,0 +1,130 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" GroupingSetting="Access">
+  <Class Name="OurGame.Engine.Components.AbstractComponent">
+    <Position X="1.75" Y="0.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAA4AAAAAAQAAQAAAAAAAQAAAAAAAAAAQ=</HashCode>
+      <FileName>Engine\Components\AbstractComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.Components.ModelComponent" Collapsed="true">
+    <Position X="0.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAwIAAgAAAAAAAAAAABAAASAAAAAAAAQ=</HashCode>
+      <FileName>Engine\Components\ModelComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.CameraComponent" Collapsed="true">
+    <Position X="2.75" Y="4.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAgAABAAAwAAACAAAAAAAAABAAAAAAAOBIAQABQ=</HashCode>
+      <FileName>Engine\Components\CameraComponent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.ConfigurationManager">
+    <Position X="3.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAQAAAAAAwAAAAAAACAAAAAAgAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Configuration\ConfigurationManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.GraphicConfiguration" Collapsed="true">
+    <Position X="7.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAEAAAAIAAAAEAAAAAAgAAAAABAAAAAQAAABABAAAw=</HashCode>
+      <FileName>Engine\Configuration\GraphicConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.InputConfiguration" Collapsed="true">
+    <Position X="9" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAABAAACYAAAACAAAgAEAAABAEAQ=</HashCode>
+      <FileName>Engine\Configuration\InputConfiguration.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.Console" Collapsed="true">
+    <Position X="7.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEBAAAAAAAgAAAAAAAAABAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Engine\Debugging\Console.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.Debug" Collapsed="true">
+    <Position X="9" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAAAAAAwAAAAEAAQAAAAEAEAAgAAgAAAAAAAA=</HashCode>
+      <FileName>Engine\Debugging\Debug.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.FPSCounter" Collapsed="true">
+    <Position X="10.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAAAAAAAAAAAQAAAAAAAAAgAAAAAAAAA=</HashCode>
+      <FileName>Engine\Debugging\FPSCounter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.GameObject" Collapsed="true">
+    <Position X="5.5" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQQMABAAAAoAoAAAQAEQAwQAAAAAAAQAAAAAEAAAAQ=</HashCode>
+      <FileName>Engine\GameObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.InputManager" Collapsed="true">
+    <Position X="10.75" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAQAAAgAAQAAAAAAAAAAIQAAAAAAAAAAAAAAAEA=</HashCode>
+      <FileName>Engine\InputManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.Scale" Collapsed="true">
+    <Position X="7.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIAAQAAAAAIAAAAAAAAAAAAAAAAAAAAAAAYAE=</HashCode>
+      <FileName>Engine\Scale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.Scene" Collapsed="true">
+    <Position X="9" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>CAQAEAAAAAAAAgIAAAEACAgAQAAAAAgAAAAAAAAAAAQ=</HashCode>
+      <FileName>Engine\Scene.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.ScreenManager" Collapsed="true">
+    <Position X="10.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEAAAAAAAAgAAAAAAAAAAAABAACAAQAAAAAAAAAQ=</HashCode>
+      <FileName>Engine\ScreenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.Transform" Collapsed="true">
+    <Position X="5.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAIAAAIAwAAIAAAAACAAAAAAAAAAAgAIAACA=</HashCode>
+      <FileName>Engine\Transform.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.Engine.Serialization.XMLManager&lt;T&gt;" Collapsed="true">
+    <Position X="7.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAEAA=</HashCode>
+      <FileName>Engine\Serialization\XMLManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="OurGame.OurGame" Collapsed="true">
+    <Position X="5.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAEEAAAAAAAwAAAQAAAAAAAAoAAAhQAAAAAAgIAAQ=</HashCode>
+      <FileName>OurGame.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Enum Name="OurGame.Engine.KeyBinding" Collapsed="true">
+    <Position X="5.5" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEAAACAIiAAAAAAAAAAAEAAAABAAAAACACAQAAAAAI=</HashCode>
+      <FileName>Engine\Enums.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

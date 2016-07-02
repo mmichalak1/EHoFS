@@ -1,0 +1,126 @@
+<GameObject z:Id="i1" xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine" xmlns:i="http://www.w3.org/2001/XMLSchema-instance" xmlns:z="http://schemas.microsoft.com/2003/10/Serialization/">
+	<Children/>
+	<Components xmlns:a="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components">
+		<a:AbstractComponent z:Id="i2" i:type="a:ModelComponent">
+			<a:Enabled>true</a:Enabled>
+			<a:Parent z:Ref="i1"/>
+			<a:_diffuseColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+				<b:W>0</b:W>
+				<b:X>0</b:X>
+				<b:Y>0</b:Y>
+				<b:Z>0</b:Z>
+			</a:_diffuseColorChanger>
+			<a:_effectName>RenderBuffer</a:_effectName>
+			<a:_emissiveColorChanger xmlns:b="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+				<b:W>1</b:W>
+				<b:X>1</b:X>
+				<b:Y>1</b:Y>
+				<b:Z>1</b:Z>
+			</a:_emissiveColorChanger>
+			<a:_materialName>AxeMaterial</a:_materialName>
+			<a:_modelName>Alien1</a:_modelName>
+			<a:_usesDefaultNormals>false</a:_usesDefaultNormals>
+		</a:AbstractComponent>
+		<a:AbstractComponent z:Id="i3" i:type="a:RigidBodyComponent">
+			<a:Enabled>true</a:Enabled>
+			<a:Parent z:Ref="i1"/>
+			<a:_affectedByGravity>false</a:_affectedByGravity>
+			<a:_bounciness>0.003</a:_bounciness>
+			<a:_coeffecient>0.002</a:_coeffecient>
+			<a:_mass>1</a:_mass>
+			<a:_maximumForce>2000</a:_maximumForce>
+			<a:_maximumSpeed>500</a:_maximumSpeed>
+			<a:_oneDivMass>1</a:_oneDivMass>
+		</a:AbstractComponent>
+		<a:AbstractComponent z:Id="i4" i:type="a:ColliderComponent">
+			<a:Enabled>true</a:Enabled>
+			<a:Parent z:Ref="i1"/>
+			<a:_boundingObject z:Id="i5" i:type="b:Sphere" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame.Engine.Components.BoundingObjects">
+				<a:Parent z:Ref="i1"/>
+				<b:_boundingSphere xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+					<c:Center>
+						<c:X>0</c:X>
+						<c:Y>0</c:Y>
+						<c:Z>0</c:Z>
+					</c:Center>
+					<c:Radius>55</c:Radius>
+				</b:_boundingSphere>
+				<b:_offset xmlns:c="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+					<c:X>0</c:X>
+					<c:Y>0</c:Y>
+					<c:Z>0</c:Z>
+				</b:_offset>
+			</a:_boundingObject>
+			<a:_type>Physics</a:_type>
+		</a:AbstractComponent>
+		<a:AbstractComponent z:Id="i6" i:type="a:SimpleAnimationComponent">
+			<a:Enabled>true</a:Enabled>
+			<a:Parent z:Ref="i1"/>
+			<a:_changeModelInterval>500</a:_changeModelInterval>
+			<a:_changeTimer>0</a:_changeTimer>
+			<a:_currentModel>0</a:_currentModel>
+			<a:_modelComponent z:Ref="i2"/>
+			<a:_modelsNames xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<b:string>Alien1</b:string>
+				<b:string>Alien2</b:string>
+				<b:string>Alien3</b:string>
+				<b:string>Alien4</b:string>
+			</a:_modelsNames>
+		</a:AbstractComponent>
+		<a:AbstractComponent z:Id="i7" i:type="b:SoundComponent" xmlns:b="http://schemas.datacontract.org/2004/07/OurGame">
+			<a:Enabled>true</a:Enabled>
+			<a:Parent z:Ref="i1"/>
+		</a:AbstractComponent>
+		<a:AbstractComponent z:Id="i8" i:type="a:ScriptComponent">
+			<a:Enabled>true</a:Enabled>
+			<a:Parent z:Ref="i1"/>
+			<a:_scripts xmlns:b="http://schemas.microsoft.com/2003/10/Serialization/Arrays">
+				<b:anyType z:Id="i9" i:type="c:Alien" xmlns:c="http://schemas.datacontract.org/2004/07/OurGame.Scripts.AI">
+					<_arrivingDistance xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">750</_arrivingDistance>
+					<_entityWidth xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">0</_entityWidth>
+					<_floatingHeight xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">200</_floatingHeight>
+					<_mass xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">20</_mass>
+					<_maxForce xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">250</_maxForce>
+					<_maxSpeed xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">250</_maxSpeed>
+					<_maxTurnRate xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">90</_maxTurnRate>
+					<_separationDistance xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">250</_separationDistance>
+					<_wanderDistance xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">-750</_wanderDistance>
+					<_wanderJitter xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">1</_wanderJitter>
+					<_wanderRadius xmlns="http://schemas.datacontract.org/2004/07/OurGame.Engine.Navigation">450</_wanderRadius>
+					<c:_damage>10</c:_damage>
+					<c:_health>100</c:_health>
+					<c:_isRecievingDamage>false</c:_isRecievingDamage>
+					<c:_maxHealth>100</c:_maxHealth>
+					<c:_recievingDamageTime>100</c:_recievingDamageTime>
+					<c:_speed>30</c:_speed>
+					<c:_shootInterval>500</c:_shootInterval>
+				</b:anyType>
+			</a:_scripts>
+		</a:AbstractComponent>
+	</Components>
+	<Destroy>false</Destroy>
+	<Enabled>true</Enabled>
+	<IsPrefab>true</IsPrefab>
+	<Name>Alien</Name>
+	<Parent i:nil="true"/>
+	<Tag>Enemy</Tag>
+	<Transform z:Id="i10">
+		<GameObject z:Ref="i1"/>
+		<Position xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+			<a:X>0</a:X>
+			<a:Y>0</a:Y>
+			<a:Z>0</a:Z>
+		</Position>
+		<Rotation xmlns:a="http://schemas.datacontract.org/2004/07/Microsoft.Xna.Framework">
+			<a:W>1</a:W>
+			<a:X>0</a:X>
+			<a:Y>0</a:Y>
+			<a:Z>0</a:Z>
+		</Rotation>
+		<Scale>
+			<_x>0.5</_x>
+			<_y>0.5</_y>
+			<_z>0.5</_z>
+		</Scale>
+	</Transform>
+</GameObject>

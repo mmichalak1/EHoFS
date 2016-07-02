@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<ParticleData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <TextureName>FireballAtlas</TextureName>
+  <Direction>
+    <X>0</X>
+    <Y>0</Y>
+    <Z>0</Z>
+  </Direction>
+  <Speed>0</Speed>
+  <LifeSpan>3</LifeSpan>
+  <Scale>50</Scale>
+</ParticleData>

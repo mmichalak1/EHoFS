@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>Axe</string>
+  <string>Axe_yellow</string>
+  <string>Axe_red</string>
+  <string>Axe_green</string>
+  <string>Axe_white</string>
+  <string>Hands</string>
+  <string>Alien1</string>
+  <string>Ghost1</string>
+</ArrayOfString>

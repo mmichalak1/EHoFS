@@ -1,0 +1,25 @@
+﻿<?xml version="1.0"?>
+<ArrayOfString xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <string>dash</string>
+  <string>footsteps-01</string>
+  <string>footsteps-02</string>
+  <string>footsteps-03</string>
+  <string>shot-01</string>
+  <string>shot-02</string>
+  <string>chargedShot</string>
+  <string>chargeShot</string>
+  <string>playerGotHit</string>
+  <string>enemyOnDeath</string>
+  <string>doors</string>
+  <string>enemyGotHit</string>
+  <string>swing-01</string>
+  <string>swing-02</string>
+  <string>swing-03</string>
+  <string>fan</string>
+  <string>ghostMovement</string>
+  <string>invaderMovement</string>
+  <string>explodingBarrel</string>
+  <string>barrelThrow</string>
+  <string>dkMove</string>
+  <string>typing</string>
+</ArrayOfString>

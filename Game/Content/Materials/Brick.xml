@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<Material xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <IsReflective>false</IsReflective>
+  <IsEmissive>false</IsEmissive>
+  <Name>Brick</Name>
+  <Shininess>0</Shininess>
+  <ShiningPower>0</ShiningPower>
+  <EmissionPower>0</EmissionPower>
+</Material>

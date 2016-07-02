@@ -1,0 +1,4 @@
+﻿1. Camera jumping
+2. Colliders don't scale with object
+3. Box colliders don't follow parent object correctlly
+4. Zakomentowanie wywolania initializa dla children obiektu
