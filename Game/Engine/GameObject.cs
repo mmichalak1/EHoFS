@@ -25,6 +25,7 @@ namespace OurGame.Engine
     [KnownType(typeof(AnimationComponent))]
     [KnownType(typeof(SoundComponent))]
     [KnownType(typeof(MenuComponent))]
+    [KnownType(typeof(ReflectionComponent))]
     [DataContract(IsReference = true)]
     public class GameObject
     {
@@ -188,6 +189,17 @@ namespace OurGame.Engine
             }
         }
 
+        public void DrawColor( Matrix view, Matrix projection)
+        {
+            if(Enabled)
+            {
+                foreach (var component in _myComponents)
+                    component.DrawColor(view, projection);
+                foreach (var child in _children)
+                    child.DrawColor(view, projection);
+            }
+        }
+
         public void Draw(GameTime gameTime, SpriteBatch spriteBatch)
         {
             if (Enabled && !Destroy)
@@ -196,6 +208,17 @@ namespace OurGame.Engine
                     component.Draw(gameTime, spriteBatch);
                 foreach (GameObject go in Children)
                     go.Draw(gameTime, spriteBatch);
+            }
+        }
+
+        public void DrawReflecive(GraphicsDevice device)
+        {
+            if (Enabled && !Destroy)
+            {
+                foreach (AbstractComponent component in _myComponents)
+                    component.DrawReflective(device);
+                foreach (GameObject go in Children)
+                    go.DrawReflecive(device);
             }
         }
         #endregion

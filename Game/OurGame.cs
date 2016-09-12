@@ -174,6 +174,7 @@ namespace OurGame
             ContentContainer.Fonts.TryGetValue("MyFont", out Debug.debugFont);
             //ContentContainer.Songs.TryGetValue("Song", out song);
             song = ContentContainer.Songs["Song"].CreateInstance();
+            Debug.DebugScreensVisibility[Debug.ScreenType.Camera] = true;
         }
         /// <summary>
         /// UnloadContent will be called once per game and is the place to unload
@@ -184,7 +185,7 @@ namespace OurGame
             ScreenManager.Instance.UnloadContent();
         }
         /// <summary>
-        /// Allows the game to run logic such as updating the world,
+        /// Allows the game to run logic such as updating the world,    
         /// checking for collisions, gathering input, and playing audio.
         /// </summary>
         /// <param name="gameTime">Provides a snapshot of timing values.</param>
@@ -238,7 +239,7 @@ namespace OurGame
                 ParticleEmiter.Instance.Update(gameTime);
                 InputManager.Update();
                 PhysicsEngine.Instance.Update(gameTime);
-
+     
                 base.Update(gameTime);
             }
         }
@@ -318,6 +319,16 @@ namespace OurGame
             _go.AddComponent(new ScriptComponent(_go));
             _go.GetComponentOfType<ScriptComponent>().AddScript(new SceneGenerator());
 
+            //Mirror
+            _go = new GameObject(new Vector3(2100, 2100, 0), Quaternion.Identity);
+            ScreenManager.Instance.CurrentScreen.AddGameObjectToScene(_go);
+            _go.Transform.Scale = new Scale(50f, 50f, 50f);
+            _go.Name = "Reflection";
+            //_go.AddComponent(new SkyboxRenderer(_go, "DeathStar", null, true));
+            //_go.AddComponent(new ModelComponent(_go, "DeathStar", "Default", true));
+            _go.AddComponent(new ReflectionComponent(_go, null, "Skybox"));
+
+            
             //CreateFan();
 
         }
@@ -1752,6 +1763,12 @@ namespace OurGame
             }
            
         }
+        private void CreateSkyboxSphere(Vector3 position, Quaternion rotation)
+        {
+            var go = new GameObject(position, rotation);
+            go.Name = "ReflectiveCube";
+            go.AddComponent(new ModelComponent(go, "DeathStar", "Mirror", true));
 
+        }
     }
 }

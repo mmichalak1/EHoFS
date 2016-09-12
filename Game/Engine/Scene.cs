@@ -176,5 +176,17 @@ namespace OurGame.Engine
                 go.Remove();
             }
         }
+
+        public void DrawColor(Matrix view, Matrix projection)
+        {
+            foreach (var go in GameObjectList)
+                go.DrawColor(view, projection);
+        }
+
+        public void DrawReflection(GraphicsDevice device)
+        {
+            foreach (var go in GameObjectList)
+                go.DrawReflecive(device);
+        }
     }
 }

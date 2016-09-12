@@ -4,7 +4,14 @@ float4 CameraPosition;
 
 TextureCube SkyboxTexture;
 
-bool isReflecting;
+SamplerState SkyboxSampler
+{
+   magfilter = LINEAR; 
+   minfilter = LINEAR; 
+   mipfilter = LINEAR; 
+   AddressU = Mirror; 
+   AddressV = Mirror; 
+};
 
 SamplerState SkyboxSampler
 {
@@ -15,14 +22,6 @@ SamplerState SkyboxSampler
    AddressV = Mirror; 
 };
 
-SamplerState ColorMapSampler
-{
-	MinFilter = Linear;
-	MagFilter = Linear;
-	MipFilter = Linear;
-	AddressU = Clamp;
-	AddressV = Clamp;
-};
 
 struct PixelShaderInput
 {
@@ -36,21 +35,8 @@ PixelShaderInput VSFunc(float4 Position : SV_POSITION0, float2 TexCoord :TEXCOOR
 	output.Position=mul(Position, World);
 	output.Position=mul(output.Position, View);
 	output.Position=mul(output.Position, Projection);
-	if(!isReflecting)
-	{	
-		
-		output.TexCoord= mul(Position, World) - CameraPosition;
-	}
-	else
-	{
-		float3 bigNormal = ((Normal) * 2) -1;
-		float3 normal=normalize(bigNormal);
-		float4 WorldPosition = mul(Position, World);
-		float3 eyeVector = WorldPosition-CameraPosition;
-    		output.TexCoord = reflect(eyeVector,normal);
-	}
+	output.TexCoord= mul(Position, World) - CameraPosition;
 	return output;
-	
 }
 
 float4 PSFunc(PixelShaderInput input) : COLOR0

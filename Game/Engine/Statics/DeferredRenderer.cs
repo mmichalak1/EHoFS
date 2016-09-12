@@ -172,6 +172,7 @@ namespace OurGame.Engine.Statics
         public void Draw(SpriteBatch batch, GameTime time)
         {
             ClearBuffer();
+            ScreenManager.Instance.CurrentScreen.DrawReflection(_device);
             SetBuffer();
             ScreenManager.Instance.CurrentScreen.Draw(time);
             ResolveBuffer();
@@ -199,6 +200,7 @@ namespace OurGame.Engine.Statics
                 item.DrawTransparent();
             }
             _device.SetRenderTarget(null);
+            ScreenManager.Instance.CurrentScreen.DrawReflection(_device);
             _transparentEffect.Parameters["FinalMap"].SetValue(_color);
             _transparentEffect.Parameters["TransparentMap"].SetValue(_forwardColor);
             _transparentEffect.Parameters["SourceDepth"].SetValue(_depth);
@@ -206,19 +208,16 @@ namespace OurGame.Engine.Statics
             _transparentEffect.CurrentTechnique.Passes[0].Apply();
             _renderer.Draw(_device);
 
-            _device.DepthStencilState = DepthStencilState.None;
-            _device.RasterizerState = RasterizerState.CullNone;
-            _device.BlendState=BlendState.AlphaBlend;
-            ParticleSystem.ParticleEmiter.Instance.Draw(CameraComponent.Main, _device);
-            _device.RasterizerState = RasterizerState.CullCounterClockwise;
 
 
-            //batch.Begin(SpriteSortMode.Immediate, BlendState.Opaque, SamplerState.PointClamp, null, null);
-            //batch.Draw(_color, new Rectangle(0, 0, halfWidth, halfHeight), Color.White); //top left
-            //batch.Draw(_forwardDepth, new Rectangle(0, halfHeight, halfWidth, halfHeight), Color.White); //bottom left
-            //batch.Draw(_forwardColor, new Rectangle(halfWidth, 0, halfWidth, halfHeight), Color.White); //top right
-            //batch.Draw(_fxaa, new Rectangle(halfWidth, halfHeight, halfWidth, halfHeight), Color.White); //bottom right
-            //batch.End();
+
+            //_device.DepthStencilState = DepthStencilState.None;
+            //_device.RasterizerState = RasterizerState.CullNone;
+            //_device.BlendState=BlendState.AlphaBlend;
+            //ParticleSystem.ParticleEmiter.Instance.Draw(CameraComponent.Main, _device);
+            //_device.RasterizerState = RasterizerState.CullCounterClockwise;
+
+
             DrawMessage(time);
             DrawDot(time);
             DrawBossHealthBar(time);

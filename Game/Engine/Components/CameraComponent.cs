@@ -63,7 +63,7 @@ namespace OurGame.Engine
             Vector3 reference = Vector3.Transform(_direction, rotation);
             Vector3 cameraLookAt = Parent.Transform.Position + reference;
             //Debug.LogOnScreen("looking at: " +cameraLookAt.ToString(), Debug.ScreenType.Camera, new Vector2(10f, 40f));
-            //Debug.LogOnScreen("Camera positon: " + Parent.Transform.Position, Debug.ScreenType.Camera, new Vector2(10f, 60f));
+            Debug.LogOnScreen("Camera positon: " + Parent.Transform.Position, Debug.ScreenType.Camera, new Vector2(10f, 60f));
             //Debug.LogOnScreen(Parent.Transform.Rotation.ToString(), Debug.ScreenType.Camera, new Vector2(10, 80));
             //Debug.LogOnScreen("Yaw: " + _yaw, Debug.ScreenType.Camera, new Vector2(10, 100));
             //Debug.LogOnScreen("Pitch" + _pitch, Debug.ScreenType.Camera, new Vector2(10, 120));

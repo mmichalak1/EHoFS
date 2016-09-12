@@ -28,6 +28,7 @@ namespace OurGame.Engine.Components
         private Material _material;
         private Effect _effect;
         private Model _model;
+        BasicEffect effect;
 
         private Texture2D _diffuseMap, _specularMap, _normalMap, _emissiveMap;
 
@@ -93,7 +94,7 @@ namespace OurGame.Engine.Components
 
         protected override void LoadContent()
         {
-
+            effect = new BasicEffect(OurGame.Game.GraphicsDevice);
             ContentContainer.Models.TryGetValue(_modelName, out _model);
             if (_diffuseMap == null)
                 ContentContainer.TexColor.TryGetValue(_modelName, out _diffuseMap);
@@ -123,6 +124,7 @@ namespace OurGame.Engine.Components
                 _effect = ContentContainer.Shaders["ForwardRender"];
             if (!Material.IsReflective)
                 ContentContainer.Shaders.TryGetValue(_effectName, out _effect);
+            effect = new BasicEffect(OurGame.Game.GraphicsDevice);
         }
 
         public override void Update(GameTime time)
@@ -197,6 +199,29 @@ namespace OurGame.Engine.Components
                     mesh.Draw();
                 }
             }
+        }
+
+        public override void DrawColor(Matrix view, Matrix projection)
+        {
+            foreach (var mesh in Model.Meshes)
+            {
+
+                effect.World =
+                       Matrix.CreateScale(
+                            Parent.Transform.Scale.X,
+                            Parent.Transform.Scale.Y,
+                            Parent.Transform.Scale.Z) *
+                       Matrix.CreateFromQuaternion(Parent.Transform.Rotation) *
+                       Matrix.CreateTranslation(Parent.Transform.Position);
+                effect.View = view;
+                effect.Projection = projection;
+                effect.TextureEnabled = true;
+                effect.Texture = _diffuseMap;
+                mesh.Effects[0].CurrentTechnique = effect.CurrentTechnique;
+                effect.CurrentTechnique.Passes[0].Apply();
+                mesh.Draw();
+            }
+
         }
     }
 }

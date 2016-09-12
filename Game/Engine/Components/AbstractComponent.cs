@@ -60,5 +60,15 @@ namespace OurGame.Engine.Components
         {
 
         }
+
+        public virtual void DrawReflective(GraphicsDevice device)
+        {
+
+        }
+
+        public virtual void DrawColor(Matrix view, Matrix projection)
+        {
+
+        }
     }
 }

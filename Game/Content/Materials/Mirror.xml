@@ -2,7 +2,7 @@
 <Material xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <IsEmissive>false</IsEmissive>
   <IsReflective>true</IsReflective>
-  <Name>Default</Name>
+  <Name>Mirror</Name>
   <Shininess>1</Shininess>
   <ShiningPower>1</ShiningPower>
   <EmissionPower>0</EmissionPower>

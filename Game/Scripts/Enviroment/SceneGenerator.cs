@@ -21,7 +21,7 @@ namespace OurGame.Scripts.Enviroment
         [DataMember]
         private int MinRoomCount = 3;
         [DataMember]
-        private int seed = 0;
+        private int seed = 100;
 
         [DataMember]
         private int startingX;

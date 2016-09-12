@@ -45,6 +45,7 @@ namespace OurGame.Engine.Components
             skyboxEffect.Parameters["Projection"].SetValue(CameraComponent.Main.Projection);
             skyboxEffect.Parameters["CameraPosition"].SetValue(CameraComponent.Main.Parent.Transform.Position);
             skyboxEffect.Parameters["SkyboxTexture"].SetValue(skyboxTexture);
+            skyboxEffect.Parameters["isReflecting"].SetValue(false);
             foreach (ModelMesh mesh in skyboxModel.Meshes)
             {
                 foreach (ModelMeshPart part in mesh.MeshParts)

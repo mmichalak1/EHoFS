@@ -22,7 +22,7 @@ namespace OurGame.Engine
             _logScreens.Add(ScreenType.Physics, new List<Log>());
             DebugScreensVisibility = new Dictionary<ScreenType, bool>();
             DebugScreensVisibility.Add(ScreenType.General, true);
-            DebugScreensVisibility.Add(ScreenType.Camera, false);
+            DebugScreensVisibility.Add(ScreenType.Camera, true);
             DebugScreensVisibility.Add(ScreenType.Logic, false);
             DebugScreensVisibility.Add(ScreenType.Other, false);
             DebugScreensVisibility.Add(ScreenType.Physics, false);
@@ -66,16 +66,17 @@ namespace OurGame.Engine
         private static void DrawScreen(ScreenType type, SpriteBatch batch)
         {
             batch.Begin();
-            //foreach (Log x in _logScreens[type])
-            //{
-            //    batch.DrawString(debugFont, x.Message, x.Position, Color.Yellow);
-            //}
-            //for (int i = 0; i < _consoleLogs.Length; i++)
-            //{
-            //    if (_consoleLogs[i] != null)
-            //        batch.DrawString(debugFont, _consoleLogs[i], new Vector2(10, position), Color.Red);
-            //    position += 20;
-            //}
+            int position = 0;
+            foreach (Log x in _logScreens[type])
+            {
+                batch.DrawString(debugFont, x.Message, x.Position, Color.Yellow);
+            }
+            for (int i = 0; i < _consoleLogs.Length; i++)
+            {
+                if (_consoleLogs[i] != null)
+                    batch.DrawString(debugFont, _consoleLogs[i], new Vector2(10, position), Color.Red);
+                position += 20;
+            }
             batch.End();
             _logScreens[type].Clear();
 
